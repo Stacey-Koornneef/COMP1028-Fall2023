@@ -1,0 +1,83 @@
+body{
+	font-family: Arial, sans-serif;
+	background-color: white;
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	max-width: 800px;
+	margin: 0 auto;
+	padding: 20px;
+	text-align: center;
+	box-shadow: 0 0 10px rgba(0,0,0,0.1)
+}
+
+header{
+	background-color: teal;
+	color: white;
+	padding: 20px;
+}
+
+nav ul{
+	list-style: none;
+	padding: 0;
+}
+
+nav ul li{
+	display: inline;
+	margin-right: 20px;
+}
+
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+footer{
+	background-color: teal;
+	color: white;
+	padding: 10px;
+}
+
+.destinations-section{
+	margin:20px;
+}
+
+.destinations-section ul{
+	list-style-type: disc;
+	text-align: left;
+}
+
+.section-title{
+	font-size:  20px;
+	color: teal;
+}
+
+.page-title{
+	text-align: center;
+	font-size: 24px;
+}
+
+.mission-section, .team-section{
+	margin: 20px;
+}
+
+.mission-text{
+	text-align: center;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+.team-list{
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.team-member{
+	margin-bottom: 10px;
+}
+
+.team-member strong{
+	font-weight: bold;
+}
