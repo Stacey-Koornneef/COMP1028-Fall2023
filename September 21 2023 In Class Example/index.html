@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Coffee Shop Order</title>
+</head>
+
+<body>
+	<form action="result.html" method="get">
+		<h1>Coffee Shop Order Form</h1>
+		<label for="name"> Your Name: </label>
+		<input type="text" id="name" name="name" required><br><br>
+		
+		<label for="coffee">Coffee Selection:</label>
+		<select id="coffee" name="coffee" required>
+			<option value="espresso">Espresso</option>
+			<option value="cappuccino">Cappuccino</option>
+			<option value="latte">Latte</option>
+			<option value="americano">Americano</option>
+			<option value="mocha">Mocha</option>
+		</select><br><br>
+		
+		<label for="size">Size:</label>
+		<input type="radio" id="small" name="size" value="Small" required>
+		<label for="small">Small</label>
+		<input type="radio" id="medium" name="size" value="medium">
+		<label for="medium">Medium</label>
+		<input type="radio" id="large" name="size" value="large">
+		<label for="large">Large</label><br><br>
+		
+		<label for="extras">Extras:</label><br>
+		<input type="checkbox" id="chocolate" name="extras" value="chocolate">
+		<label for="chocolate">Chocolate</label>
+		<input type="checkbox" id="milk" name="extras" value="milk">
+		<label for="milk"> Milk</label>
+		<input type ="checkbox" id="sugar" name="extras" value="sugar">
+		<label for="sugar">Sugar</label>
+		<input type="checkbox" id="whippedCream" name="extras" value="whippedCream">
+		<label for="whippedCream">Whipped Cream</label><br><br>
+		
+		<label for="pickupDate">Pickup Date:</label>
+		<input type="date" id="pickupDate" name="pickupDate" required><br><br>
+		
+		<input type="submit" value="Place Order">
+	</form>
+</body>
+</html>

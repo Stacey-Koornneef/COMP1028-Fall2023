@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="style.css">
+	<title>Coffee Shop Order Confirmation</title>
+</head>
+<body>
+	<div class="confirmation">
+		<h1>Order Confirmation</h1>
+		<p><strong>Name:</strong> <span id="name"></span></p>
+		<p><strong>Coffee Selection:</strong> <span id="coffee"></span></p>
+		<p><strong>Size:</strong> <span id="size"></span></p>
+		<p><strong>Extras:</strong> <span id="extras"></span></p>
+		<p><strong>Pickup Date:</strong> <span id="pickupDate"></span></p>
+	</div>
+	
+	<script>
+		//JavaScript code to retrieve and display form data
+		const params = new URLSearchParams(window.location.search);
+	
+		//set values in the HTML elements
+		document.getElementById("name").textContent = params.get("name") || "N/A";
+		document.getElementById("coffee").textContent = params.get("coffee") || "N/A";
+		document.getElementById("size").textContent = params.get("size") || "N/A";
+		
+		const extras = params.getAll("extras");
+		if (extras.length > 0){
+			document.getElementById("extras").textContent = extras.join(", ");
+		} else {
+			document.getElementById("extras").textContent = "None";
+		}
+		
+		document.getElementById("pickupDate").textContent = params.get("pickupDate") || "N/A";
+	</script>
+</body>
+</html>
